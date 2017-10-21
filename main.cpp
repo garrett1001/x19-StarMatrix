@@ -10,11 +10,12 @@ int main()
 int width;
 int height;
 
-cout<<"Enter a height for the matrix"<<endl;
+cout<<"Enter rows and columns of stars:"<<endl;
 cin>>height;
-
-cout<<"Enter a width for the matrix"<<endl;
 cin>>width;
+
+if(height>0 && width>0)
+{
 
 vector< vector<char> > matrix;
 
@@ -25,7 +26,7 @@ int col;
 
 for(row=0; row < matrix.size(); row++)
 {
-matrix[row].resize(height);
+matrix[row].resize(width);
 }
 
 char star='*';
@@ -46,8 +47,12 @@ for(row=0; row < matrix.size(); row++)
     }
    cout<<endl;
 }
+}
 
-
+else
+{
+    return 0;
+}
 
     return 0;
 }
