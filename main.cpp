@@ -43,7 +43,7 @@ for(row=0; row < matrix.size(); row++)
 {
     for(col=0; col < matrix[row].size(); col++)
     {
-    cout<<matrix[row][col]<<" ";
+    cout<<matrix[row][col];
     }
    cout<<endl;
 }
